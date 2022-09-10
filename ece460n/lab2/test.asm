@@ -1,6 +1,0 @@
-.ORIG x3000
-ADD R1, R1, #1
-AND R0, R0, #0
-ADD R1, R1, #1
-TRAP x25
-.END
