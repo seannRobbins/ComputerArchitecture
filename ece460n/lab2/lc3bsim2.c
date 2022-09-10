@@ -1,8 +1,6 @@
 /*
-    Name 1: Full name of the first partner 
-    Name 2: Full name of the second partner
-    UTEID 1: UT EID of the first partner
-    UTEID 2: UT EID of the second partner
+Name1: Seann Robbins
+Aniketh Deverasetty
 */
 
 /***************************************************************/
@@ -23,10 +21,6 @@
 /*                                                             */
 /* Files: isaprogram   LC-3b machine language program file     */
 /*                                                             */
-/***************************************************************/
-
-/***************************************************************/
-/* These are the functions you'll have to write.               */
 /***************************************************************/
 
 void process_instruction();
@@ -384,10 +378,7 @@ int main(int argc, char *argv[]) {
 }
 
 /***************************************************************/
-/* Do not modify the above code.
-   You are allowed to use the following global variables in your
-   code. These are defined above.
-
+/*
    MEMORY
 
    CURRENT_LATCHES
