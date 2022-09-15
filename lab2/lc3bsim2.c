@@ -1,6 +1,8 @@
 /*
-    Name 1: Seann Robbins
-    Name 2: Aniketh Devarasetty
+    Name 1: Full name of the first partner 
+    Name 2: Full name of the second partner
+    UTEID 1: UT EID of the first partner
+    UTEID 2: UT EID of the second partner
 */
 
 /***************************************************************/
@@ -16,6 +18,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 /***************************************************************/
 /*                                                             */
@@ -714,12 +717,12 @@ int rshfl(int dr, int sr, int bit)
     return Low16bits(num);
 }
 
+//SOMETHING WRONG HERE
 int rshfa(int dr, int sr, int bit)
 {
-    int num = (CURRENT_LATCHES.REGS[sr] >> bit);
-    int m = 16 - bit;
-    m = ~m;
-    return num | m;
+    int16_t num = (int16_t) (CURRENT_LATCHES.REGS[sr]);
+    num = num >> bit;
+    return Low16bits(num);
 }
 
 void shf(int instruction)
